@@ -1,6 +1,7 @@
 package com.cicd.githubjenkins;
 
 import com.cicd.githubjenkins.models.Address;
+import com.cicd.githubjenkins.models.Order;
 import com.cicd.githubjenkins.models.Product;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,10 +25,10 @@ public class GithubJenkinsApplication {
 		for(Address a : locations)
 			System.out.println(a);
 
-//		System.out.println("\nOrders:-");
-//		List<Order> ordersList = (List<Order>) ctx.getBean("orders");
-//		for(Order o : ordersList)
-//			System.out.println(o);
+		System.out.println("\nOrders:-");
+		List<Order> ordersList = (List<Order>) ctx.getBean("orders");
+		for(Order o : ordersList)
+			System.out.println(o);
 
 	}
 
